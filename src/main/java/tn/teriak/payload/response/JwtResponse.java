@@ -16,6 +16,8 @@ public class JwtResponse {
   private String service;
   private String fonction;
   private String matricule;
+	private Double Solde_Conge;
+
   
 
  
@@ -50,7 +52,7 @@ public void setSignataire(String signataire) {
 
 
 public JwtResponse(String token, String type, Integer id, String username, String email, List<String> roles,
-		String signataire, String site, String nomprenom, String service, String fonction,String matricule) {
+		String signataire, String site, String nomprenom, String service, String fonction,String matricule, Double Solde_Conge) {
 	super();
 	this.token = token;
 	this.type = type;
@@ -64,6 +66,15 @@ public JwtResponse(String token, String type, Integer id, String username, Strin
 	this.service = service;
 	this.fonction = fonction;
 	this.matricule=matricule;
+	this.Solde_Conge=Solde_Conge;
+}
+
+public Double getSolde_Conge() {
+	return Solde_Conge;
+}
+
+public void setSolde_Conge(Double solde_Conge) {
+	Solde_Conge = solde_Conge;
 }
 
 public String getToken() {
