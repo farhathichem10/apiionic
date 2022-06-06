@@ -20,7 +20,15 @@ public class Role {
 
 
 
-  public Integer getId() {
+  public Role(Integer id, ERole name) {
+	super();
+	this.id = id;
+	this.name = name;
+}
+
+
+
+public Integer getId() {
     return id;
   }
 
