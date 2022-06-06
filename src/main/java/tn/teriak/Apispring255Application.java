@@ -33,7 +33,7 @@ public class Apispring255Application extends SpringBootServletInitializer {
 	            repo.save(new TypeAttestation(2,"Travail" ));
 	            repo.save(new TypeAttestation(3,"Titularisation" ));
 	            repo.save(new TypeAttestation(4,"Salaire" ));
-	            repo.save(new TypeAttestation(4,"Fiche de Paie" ));
+	            repo.save(new TypeAttestation(5,"Fiche de Paie" ));
 
 
 
