@@ -17,12 +17,25 @@ public class JwtResponse {
   private String fonction;
   private String matricule;
 	private Double Solde_Conge;
+	private String Societe;
+	private String direction;
+	private String Dernier_maj_solde_conge;
+
+
 
   
 
  
 
-  public String getMatricule() {
+  public String getDernier_maj_solde_conge() {
+		return Dernier_maj_solde_conge;
+	}
+
+	public void setDernier_maj_solde_conge(String dernier_maj_solde_conge) {
+		Dernier_maj_solde_conge = dernier_maj_solde_conge;
+	}
+
+public String getMatricule() {
 	return matricule;
 }
 
@@ -52,7 +65,7 @@ public void setSignataire(String signataire) {
 
 
 public JwtResponse(String token, String type, Integer id, String username, String email, List<String> roles,
-		String signataire, String site, String nomprenom, String service, String fonction,String matricule, Double Solde_Conge) {
+		String signataire, String site, String nomprenom, String service, String fonction,String matricule, Double Solde_Conge,String Societe,String direction,String Dernier_maj_solde_conge) {
 	super();
 	this.token = token;
 	this.type = type;
@@ -67,6 +80,17 @@ public JwtResponse(String token, String type, Integer id, String username, Strin
 	this.fonction = fonction;
 	this.matricule=matricule;
 	this.Solde_Conge=Solde_Conge;
+	this.Societe=Societe;
+	this.direction=direction;
+	this.Dernier_maj_solde_conge=Dernier_maj_solde_conge;
+}
+
+public String getDirection() {
+	return direction;
+}
+
+public void setDirection(String direction) {
+	this.direction = direction;
 }
 
 public Double getSolde_Conge() {
@@ -171,4 +195,13 @@ public String getAccessToken() {
   public List<String> getRoles() {
     return roles;
   }
+
+public String getSociete() {
+	return Societe;
+}
+
+public void setSociete(String societe) {
+	Societe = societe;
+}
+  
 }

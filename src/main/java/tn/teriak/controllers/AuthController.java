@@ -74,7 +74,7 @@ public class AuthController {
                          "Bearer", userDetails.getId(), 
                          userDetails.getUsername(), 
                          userDetails.getEmail(), 
-                         roles, userDetails.getSignataire(),userDetails.getSite(),userDetails.getNomPrenom(),userDetails.getService(),userDetails.getFonction(),userDetails.getMatricule(),userDetails.getSolde_Conge()));
+                         roles, userDetails.getSignataire(),userDetails.getSite(),userDetails.getNomPrenom(),userDetails.getService(),userDetails.getFonction(),userDetails.getMatricule(),userDetails.getSolde_Conge(),userDetails.getSociete(),userDetails.getDirection(),userDetails.getDernier_maj_solde_conge()));
   }
 
   @PostMapping("/signup")
