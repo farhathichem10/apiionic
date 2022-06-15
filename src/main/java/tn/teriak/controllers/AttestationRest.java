@@ -74,6 +74,11 @@ public class AttestationRest {
 	 @GetMapping("/getallattestationbyuser/{id}")
 	    public List <Attestation> getallAttestationbyUser(@PathVariable ("id") int id){
 			return ( List <Attestation>) iat.getallAttestationbyUser(id);}
+	 @GetMapping("/getallAttestationbysuph/{sig}")
+	 public List <Attestation> getallAttestationbysuph(@PathVariable ("sig") String sig){
+		 
+		 return (List <Attestation>)iat.getallAttestationbysuph(sig);
+	 }
 	    }
 	
 
